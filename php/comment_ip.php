@@ -8,7 +8,7 @@ $topic_query = pdo_query("SELECT ip FROM $table WHERE timestamp > $timeout");
 while($topic = pdo_fetch_array($topic_query))
  {
 	 if($topic['ip']==$getIP){
-	 	$error_text[] = "Sorry, Guest can only post once every 24 hours!";
+	 	//$error_text[] = "Sorry, Guest can only post once every 24 hours!";
 	 	return;
 	 }
 	 //var_dump($topic);

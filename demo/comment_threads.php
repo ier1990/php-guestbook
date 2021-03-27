@@ -16,7 +16,7 @@ $TempAdminLogin=true;
 $getIP=getIP();
 $og_image = "";
 $og_image_alt  = "";
-$defaultpostID=1;
+$defaultpostID=false;
 ######################################################################
 # Database settings
 ######################################################################
@@ -279,7 +279,7 @@ echo'</p>';
 		    //post_comment_threads($comments_array["id"]);
 		    //echo "<HR>";
 		    //display_child_comment_posts($comments_array["id"]);
-		    all_comments_threads2w($table,"100",$comments_array["dfilename"]);
+		    //all_comments_threads2w($table,"100",$comments_array["dfilename"]);
 		    //WIDTH=20% HEIGHT=100% ALIGN="left" VALIGN="top"
 		?>
 	</div>

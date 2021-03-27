@@ -9,7 +9,7 @@
 #######################################
 if (!function_exists('getit'))
   {
-  function getit($Requested_Array=array(),$key='',$length=75,$defaut=false){
+  function getit($Requested_Array=array(),$key='',$length=254,$defaut=false){
     //Get or Post or Request or cookie, any Array, etc
     $temp="";
     $temp=(isset($Requested_Array[$key])) ? strip_tags(trim($Requested_Array[$key])) : $defaut;

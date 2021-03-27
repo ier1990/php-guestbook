@@ -5,12 +5,12 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="./index.php">Home</a>
+            <a class="navbar-brand" href="../../php-guestbook/index.php">Home</a>
           </div>
           <div class="navbar-collapse collapse navbar-responsive-collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="#">Active</a></li>
-              <li><a href="#">Link</a></li>
+              <li><a href="../../php-guestbook/demo/">Demo</a></li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                 <ul class="dropdown-menu">

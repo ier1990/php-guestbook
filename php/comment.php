@@ -55,7 +55,7 @@ authenticate($post_name,"name",3);
 $post_email = getit($_POST,"email");
 authenticate($post_email,"email",8);
 //
-$post_location = getit($_POST,"location");
+$post_location = getit($_POST,"location",99);
 authenticate($post_location,"location",2);
 //
 $post_url = getit($_POST,"url");
@@ -64,7 +64,7 @@ authenticate($post_url,"url",0);
 $post_topic = getit($_POST,"topic",99,$comments_array["topic"]);
 authenticate($post_topic,"topic",2);
 //
-$post_comments = getit($_POST,"comments");
+$post_comments = getit($_POST,"comments",2000);
 authenticate($post_comments,"comments",25);
 //
 $post_url = getit($_POST,"post_url");
@@ -108,7 +108,7 @@ $token	 = (isset($_POST["token_contact"])) ? strip_tags(trim($_POST["token_conta
 		//$jerk_check="";
 		$jerk_check=pdo_fetch_array(pdo_query("SELECT MAX(id) FROM $table"));
 		$jerk_check = $jerk_check['MAX(id)']+1;
-		//echo $jerk_check;
+		echo $jerk_check;
 		$timestamp = time();//when added
 
     if($post_url){$rating=1;$viewable=0;}else{$rating=100;$viewable=1;}
@@ -128,7 +128,7 @@ $token	 = (isset($_POST["token_contact"])) ? strip_tags(trim($_POST["token_conta
     ,'$viewable'
     ,'$rating'
     ,'$views'
-    ,'$jerk_check
+    ,'$jerk_check'
     )";
     //,'$jerk_check'
     //echo $query;
