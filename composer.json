@@ -1,0 +1,19 @@
+{
+    "name": "php-guestbook.com",
+    "description": "Backend php-guestbook nosql",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marty Lineberry",
+            "email": "sales@electronics-recycling.org"
+        }
+    ],
+    "name": "admin/www",
+    "require": {
+        "rakibtg/sleekdb": "^2.10",
+        "leonid-slv/mysql2pdo": "^1.3",
+        "vlucas/valitron": "^1.4",
+        "voku/anti-xss": "^4.1"
+    }
+}
