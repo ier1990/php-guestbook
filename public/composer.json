@@ -1,5 +1,5 @@
 {
-    "name": "php-guestbook.com",
+    "name": "samekhi/phpguestbook/public",
     "description": "Frontend php-guestbook nosql",
     "type": "project",
     "license": "MIT",
